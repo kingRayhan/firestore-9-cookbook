@@ -63,6 +63,15 @@ const q = query(collectionRef, where("username", "==", "kingrayhan"));
 
 const snapshot = await getDocs(q);
 console.log(snapshot.docs[0].data());
+
+
+
+
+
+// -- More query example
+const stateQuery = query(citiesRef, where("state", "==", "CA"));
+const populationQuery = query(citiesRef, where("population", "<", 100000));
+const nameQuery = query(citiesRef, where("name", ">=", "San Francisco"));
 ```
 **Query operator**
 - `<` - less than
