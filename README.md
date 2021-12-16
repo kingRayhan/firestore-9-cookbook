@@ -65,3 +65,18 @@ const snapshot = await getDocs(q);
 console.log(snapshot.docs[0].data());
 ```
 
+
+### Store data
+
+#### Store a doc with auto generated id
+
+```js
+const collectionRef = collection(db, "users");
+const docRef = await addDoc(collectionRef, {
+  username: "johndoe",
+  avatar: "https://avatars0.githubusercontent.com/u/174825?v=4",
+});
+
+console.log(docRef.id);
+```
+
