@@ -20,3 +20,16 @@ const config = {
 export const app = initializeApp(config);
 export const db = getFirestore(app);
 ```
+
+
+### Read doc/docs
+
+#### Read collection
+```js
+const userCollectionRef = collection(db, "users");
+getDocs(colref).then((res) => {
+  res.docs.forEach((doc) => {
+    console.log(doc.data());
+  });
+});
+```
