@@ -105,6 +105,8 @@ console.log(docRef.id);
 
 ```js
 const docRef = doc(db, "users", "user-id-custom");
+// - OR
+// const docRef = doc(db, "users/G3OIFQ7qes9Rhc74XfRA");
 
 await setDoc(docRef, {
   username: "kingrayhan",
