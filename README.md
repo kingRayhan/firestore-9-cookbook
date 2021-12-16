@@ -64,6 +64,18 @@ const q = query(collectionRef, where("username", "==", "kingrayhan"));
 const snapshot = await getDocs(q);
 console.log(snapshot.docs[0].data());
 ```
+**Query operator**
+- `<` - less than
+- `<=` - less than or equal to
+- `==` - equal to
+- `>` - greater than
+- `>=` - greater than or equal to
+- `!=` - not equal to
+- `array-contains`
+- `array-contains-any`
+- `in`
+- `not-in`
+
 
 
 ### Store data
