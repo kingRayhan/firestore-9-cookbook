@@ -1,5 +1,24 @@
 # Firestore 9 cheatsheet
 
+
+#### Table of contents
+- [Initialization](#initialization)
+- [Read doc/docs](#read-doc-docs)
+  * [Read collection](#read-collection)
+  * [Read a single document](#read-a-single-document)
+  * [Check a document exists or not](#check-a-document-exists-or-not)
+  * [Conditionally querying data](#conditionally-querying-data)
+- [Store data](#store-data)
+  * [Store a doc with auto generated id](#store-a-doc-with-auto-generated-id)
+  * [Store a doc with custom id](#store-a-doc-with-custom-id)
+- [Deleting document](#deleting-document)
+  * [Delete a document with id](#delete-a-document-with-id)
+- [Update document](#update-document)
+
+
+
+
+
 ### Initialization
 
 ```js
