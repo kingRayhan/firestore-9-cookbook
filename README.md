@@ -120,3 +120,26 @@ await setDoc(docRef, {
 const docRef = doc(db, "users", "xj7lxm0OGObV91xn3tE0");
 await deleteDoc(docRef);
 ```
+
+### Update document
+```js
+const docRef = doc(db, "users", "AvPfqaJs4hCmqpk0RUjU");
+// - OR
+// const docRef = doc(db, "users/G3OIFQ7qes9Rhc74XfRA");
+
+
+/**
+ * Update document
+ */
+await updateDoc(docRef, {
+  name: "Rayhan",
+  username: "rayhan",
+});
+
+/**
+ * Override the whole document
+ */
+await setDoc(docRef, {
+  x: 10,
+});
+```
