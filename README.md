@@ -46,4 +46,13 @@ getDoc(docRef).then((snapshot) => {
 });
 ```
 
+#### Check a document exists or not
+```js
+const docSnap = await getDoc(docRef);
+
+if(!docSnap.exists()) {
+  console.log("Document does not exist!");
+}
+```
+
 
