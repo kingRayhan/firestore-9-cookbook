@@ -112,3 +112,11 @@ await setDoc(docRef, {
   avatar: "https://avatars0.githubusercontent.com/u/174825?v=4",
 });
 ```
+
+### Deleting document
+
+#### Delete a document with id
+```js
+const docRef = doc(db, "users", "xj7lxm0OGObV91xn3tE0");
+await deleteDoc(docRef);
+```
