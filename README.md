@@ -1,5 +1,4 @@
-# firestore-9-cheatsheet
-
+# Firestore 9 cheatsheet
 
 ### Initialization
 
