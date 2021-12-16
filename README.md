@@ -101,3 +101,13 @@ const docRef = await addDoc(collectionRef, {
 console.log(docRef.id);
 ```
 
+#### Store a doc with custom id
+
+```js
+const docRef = doc(db, "users", "user-id-custom");
+
+await setDoc(docRef, {
+  username: "kingrayhan",
+  avatar: "https://avatars0.githubusercontent.com/u/174825?v=4",
+});
+```
