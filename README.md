@@ -56,3 +56,12 @@ if(!docSnap.exists()) {
 ```
 
 
+#### Conditionally querying data
+```js
+const collectionRef = collection(db, "users");
+const q = query(collectionRef, where("username", "==", "kingrayhan"));
+
+const snapshot = await getDocs(q);
+console.log(snapshot.docs[0].data());
+```
+
