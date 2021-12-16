@@ -26,10 +26,24 @@ export const db = getFirestore(app);
 
 #### Read collection
 ```js
-const userCollectionRef = collection(db, "users");
-getDocs(colref).then((res) => {
-  res.docs.forEach((doc) => {
+const collectionRef = collection(db, "users");
+
+getDocs(collectionRef).then((snapshot) => {
+  snapshot.docs.forEach((doc) => {
     console.log(doc.data());
   });
 });
 ```
+
+#### Read a single document
+```js
+const docRef = doc(db, "users", "G3OIFQ7qes9Rhc74XfRA");
+// - OR
+// const docRef = doc(db, "users/G3OIFQ7qes9Rhc74XfRA");
+
+getDoc(docRef).then((snapshot) => {
+  console.log(snapshot.data());
+});
+```
+
+
