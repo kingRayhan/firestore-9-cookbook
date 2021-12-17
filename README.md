@@ -14,6 +14,9 @@
 - [Deleting document](#deleting-document)
   * [Delete a document with id](#delete-a-document-with-id)
 - [Update document](#update-document)
+- [Sorting/limiting](#sorting-limiting)
+  * [Get limited number of docs](#get-limited-number-of-docs)
+  * [Limit with order](#limit-with-order)
 
 
 
