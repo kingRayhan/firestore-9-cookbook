@@ -162,3 +162,17 @@ await setDoc(docRef, {
   x: 10,
 });
 ```
+
+### Sorting/limiting
+
+#### Get limited number of docs
+```js
+const colRef = collection(db, "posts");
+
+const q = query(colRef, limit(5))
+const postsSnap = await getDocs(q)
+
+const posts = postsSnap.docs.map((post) => post.data())
+
+// -> console.log(posts)
+```
